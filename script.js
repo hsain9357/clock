@@ -1,8 +1,7 @@
 const row1 = document.querySelector(".row1");
 const row2 = document.querySelector(".row2");
 const row3 = document.querySelector(".row3");
-const test = document.querySelector(".test");
-function int() {
+function init() {
   setInterval(() => {
     let day = new Date();
     let second = (day.getSeconds() / 60) * 360;
@@ -18,4 +17,4 @@ function int() {
     row3.style.transform = ` rotate(${hour}deg) translateX(25px)`;
   }, 1000);
 }
-int();
+init();
